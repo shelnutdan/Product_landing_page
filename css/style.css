@@ -1,4 +1,4 @@
-h1,h1{
+h1,h2{
   color:#000;
   font-size: 900;
 }
@@ -11,15 +11,43 @@ h1,h1{
   display:flex;
   justify-content: space-around;
   align-items:center;
-  background-color: #eee;
+  background-color: #911d05;
+
   flex-wrap: wrap;
   flex-direction:row;
   z-index: 1;
+
 }
+
 #header-img{
   max-height: 200px;
   width:200px;
   background-color: #eee;
+}
+@media screen and (max-width: 765px){
+  #header{
+    width:100%;
+    position: fixed;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    justify-content: center;
+    z-index: 1;
+    top:0;
+    padding: 10px;
+
+  }
+  #nav-bar ul li a{
+    width:100%;
+    display:flex;
+
+    flex-wrap: wrap;
+    flex-direction:column;
+    justify-content: center;
+  }
+}
+#nav-bar ul li a{
+  color: #fff;
 }
 ul{
   display: flex;
@@ -54,7 +82,7 @@ a{
   padding-bottom: 40px;
   align-items:center;
   text-align: center;
-  background-color: #eee;
+  background-color: #efddd5;
   flex-wrap: wrap;
   flex-direction:row;
 }
@@ -68,7 +96,7 @@ a{
 i{
   width:20%;
   justify-content: center;
-  color:gold;
+  color:#000;
 }
 
 .feature-text{
@@ -76,6 +104,23 @@ i{
   text-align: left;
 }
 
+@media screen and (max-width:850px){
+  .feature {
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    margin:10px;
+  }
+  i{
+    width:100%;
+    justify-content: center;
+    color:#000;
+  }
+  .feature-text{
+    width: 100%;
+  }
+}
 #how_it_works{
   margin-top: 30px;
   margin-bottom: 30px;
@@ -89,21 +134,55 @@ i{
 #how_it_works h2{
   width:100%;
 }
+.program{
+  width:400px;
+  height:400px;
 
+  border-radius: 5%;
+  margin: 10px;
+  background-color: #f7b596;
+  box-shadow:20px 20px 50px grey;
+}
 #pricing {
   width:100%;
   display:flex;
   justify-content: space-around;
   align-items:center;
   text-align: center;
-  background-color: #eee;
+  background-color: #efddd5;
   flex-wrap: wrap;
   flex-direction:row;
   padding-top: 30px;
   padding-bottom: 30px;
 }
+ol{
+  justify-content: center;
+  text-align: center;
+  height:150px;
+}
+.btn{
+  border: 1px solid black;
+  box-shadow:1px 1px black;
+  padding: 5px;
+  justify-content: flex-start;
+}
+@media screen and (max-width: 900px){
+  #pricing{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+  }
+}
 
-
+footer{
+  background-color: #911d05;
+  color:#fff;
+  overflow: hidden;
+}
+footer ul li a{
+  color:#fff;
+}
 span{
   float: right;
 }
